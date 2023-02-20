@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Measurement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Header -->
+        <header id="header">
+            <div class="company">
+                <h1>Interactive</h1>
+                <h3>Geometry Genius</h3>
+            </div>
+            <div class="btn">Blog</div>
+        </header>
+        <!-- /Header -->
+    
+        <!-- Section -->
+        <section id="section">
+            <!-- Calculate Item -->
+            <main>
+                <div class="items">
+                    <div class="item item-1">
+                        <div class="item-inner">
+                            <div class="img">
+                                <img src="images/triangle.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Triangle</h3>
+                                <div class="info">Area (A) = 0.5 &times; b &times; h</div>
+                                <div class="inputs">
+                                    <input type="number" placeholder="b" id="b"><span>cm</span>
+                                    <input type="number" placeholder="h" id="h"><span>cm</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="calculateTriangle()" class="btn lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="item-inner">
+                            <div class="img">
+                                <img src="images/rectangle.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Rectangle</h3>
+                                <div class="info">Area (A) = w &times; I</div>
+                                <div class="inputs">
+                                    <input type="number" placeholder="w" id="w"><span>cm</span>
+                                    <input type="number" placeholder="l" id="l"><span>cm</span>
+                                </div>
+    
+                            </div>
+                            <div class="buttons">
+                                <button onclick="calculateRectangle()" class="btn lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="item-inner">
+                            <div class="img">
+                                <img src="images/parellelogram.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Parallelogram</h3>
+                                <div class="info">Area (A) = b &times; h</div>
+                                <div class="inputs">
+                                    b=<span class="b">10cm</span>,
+                                    h=<span class="h">12cm</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="calculateParallelogram()" class="btn lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <div class="item-inner">
+                            <div class="img">
+                                <img src="images/rhombus.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Rhombus</h3>
+                                <div class="info">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub></div>
+                                <div class="inputs">
+                                    d<sub>1</sub> = <span class="d-1">16cm</span>,
+                                    d<sub>2</sub> = <span class="d-2">8cm</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="calculateRhombus()" class="btn lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-5">
+                        <div class="item-inner">
+                            <div class="img">
+                                <img src="images/pentagon.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Pentagon</h3>
+                                <div class="info">Area (A) = 0.5 &times; p &times; b</div>
+                                <div class="inputs">
+                                    p = <span class="p">6cm</span>,
+                                    b = <span class="b">10cm</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="calculatePentagon()" class="btn lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-6">
+                        <div class="item-inner">
+                            <div class="img">
+                                <img src="images/ellipse.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Ellipse</h3>
+                                <div class="info">Area (A) = &pi;ab</div>
+                                <div class="inputs">
+                                    a = <span class="a">10cm</span>,
+                                    b = <span class="b">4cm</span>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button onclick="calculateEllipse()" class="btn lg">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- /Calculate Item -->
+            <div class="calculation">
+                <span class="text">Area Calculation</span>
+                <div class="content">
+                    <div class="context"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section -->
+    </div>
+    <!-- /Container -->
+
+    <script src="script.js"></script>
+</body>
+</html>
